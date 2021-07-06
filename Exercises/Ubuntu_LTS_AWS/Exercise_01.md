@@ -1,4 +1,4 @@
-# Terraform config to create a server with Ubuntu LTS as the image.
+# Terraform config to create a server on AWS with Ubuntu LTS as the image.
 
 Commands Used
 
