@@ -29,7 +29,6 @@ override.tf.json
 # example: *tfplan*
 Exercises/UbuntuLTS/.terraform.lock.hcl
 Exercises/Ubuntu_LTS_AWS/.terraform.lock.hcl
-Exercises/Ubuntu_LTS_GCP/home-258016-6446bb75fd5d.json
 Exercises/Ubuntu_LTS_GCP/.terraform.lock.hcl
 Exercises/Ubuntu_LTS_GCP/cred.json
 Exercises/01_Ubuntu_LTS_AWS/.terraform.lock.hcl
