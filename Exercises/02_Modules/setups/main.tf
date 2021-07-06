@@ -12,6 +12,6 @@ provider "aws" {
 }
 
 module "webserve" {
-    source = "../modules/Ubuntu_LTS"
+    source = "../modules/webserver"
     ami = "ami-00399ec92321828f5"
 }
