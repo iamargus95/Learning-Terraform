@@ -8,11 +8,12 @@ You should have access to AWS cloud (test environment). Install and configure th
 Find the latest stable version available for terraform at the time when you are performing this assignment, and configure it on your local system. Create below resources as per the required setup.
 
 ## 1. Divide your code in separate files/directories as per this format:
-	- Modules folder - which will contain the code for each of the resource we are going to create
-	- provider.tf - provider and backend configuration
-	- outputs.tf - should contain the outputs (information which we want the user to get back after each terraform run)
-	- vars.tf - Should only contain the variable declarations
-	- main.tf - which will contain the code to call a specific module
+
+- Modules folder - which will contain the code for each of the resource we are going to create
+- provider.tf - provider and backend configuration
+- outputs.tf - should contain the outputs (information which we want the user to get back after each terraform run)
+- vars.tf - Should only contain the variable declarations
+- main.tf - which will contain the code to call a specific module
 
 
 Write terraform code to create below architecture by following terraform best practices:
