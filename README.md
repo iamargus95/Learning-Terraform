@@ -8,11 +8,11 @@ A free tier AWS and GCP accounts have been used throughout this project.__
 
 > Exercise specific instructions are available in a dedicated markdown file.
 
-# 1. [01_Ubuntu_LTS_AWS](https://github.com/iamargus95/Learning-Terraform/tree/master/Exercises/01_Ubuntu_LTS_AWS)
+### 1. [01_Ubuntu_LTS_AWS](https://github.com/iamargus95/Learning-Terraform/tree/master/Exercises/01_Ubuntu_LTS_AWS)
 Creating an Ubuntu LTS instance on Amazon Web Services (AWS).
 
-# 2. [01_Ubuntu_LTS_GCP](https://github.com/iamargus95/Learning-Terraform/tree/master/Exercises/01_Ubuntu_LTS_GCP)
+### 2. [01_Ubuntu_LTS_GCP](https://github.com/iamargus95/Learning-Terraform/tree/master/Exercises/01_Ubuntu_LTS_GCP)
 Creating an Ubuntu LTS instance on Google Cloud Platform (GCP).
 
-# 3. [02_Modules_AWS](https://github.com/iamargus95/Learning-Terraform/tree/master/Exercises/02_Modules_AWS)
+### 3. [02_Modules_AWS](https://github.com/iamargus95/Learning-Terraform/tree/master/Exercises/02_Modules_AWS)
 Using modules to declare various resources for code reusability. Again on AWS.
