@@ -16,3 +16,6 @@ Creating an Ubuntu LTS instance on Google Cloud Platform (GCP).
 
 ### 3. [02_Modules_AWS](https://github.com/iamargus95/Learning-Terraform/tree/master/Exercises/02_Modules_AWS)
 Using modules to declare various resources for code reusability. Again on AWS.
+
+### 4. [02_Modules_GCP](https://github.com/iamargus95/Learning-Terraform/tree/master/Exercises/02_Modules_GCP)
+Using modules to declare various resources for code reusability. this time on GCP
