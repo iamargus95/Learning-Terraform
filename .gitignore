@@ -36,3 +36,5 @@ Exercises/01_Ubuntu_LTS_GCP/cred.json
 Exercises/01_Ubuntu_LTS_GCP/.terraform.lock.hcl
 Exercises/02_Modules/setups/.terraform.lock.hcl
 Exercises/02_Modules_AWS/setups/.terraform.lock.hcl
+Exercises/02_Modules_GCP/setups/cred.json
+Exercises/02_Modules_GCP/setups/.terraform.lock.hcl
