@@ -40,7 +40,7 @@ Create VPC with 3 private and 3 public subnets. Create NAT gateway, internet gat
 
 ## Tasks List
 
-- [ ] Create a VPC with 3 public and 3 Private subnets
+- [X] Create a VPC with 3 public and 3 Private subnets
 
 - [ ] Create NAT gateway, internet gateway and route tables
 
