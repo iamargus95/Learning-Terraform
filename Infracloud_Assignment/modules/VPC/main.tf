@@ -72,10 +72,10 @@ resource "aws_security_group" "ssh" {
   description = "For EC2 instance"
   vpc_id = aws_vpc.main.id
   ingress = [ {
-    cidr_blocks = [ "0.0.0.0/0" ]
+    cidr_blocks = [ aws_vpc.main.cidr_block]
     description = "Point 2, For EC2 instance allow port 22"
     from_port = 22
-    # ipv6_cidr_blocks = [ "value" ]
+    ipv6_cidr_blocks = [aws_vpc.main.ipv6_cidr_blocks]
     # prefix_list_ids = [ "value" ]
     protocol = "tcp"
     # security_groups = [ "value" ]
@@ -86,24 +86,24 @@ resource "aws_security_group" "ssh" {
     cidr_blocks = [ "0.0.0.0/0" ]
     description = "Set ports to 0 since all are allowed."
     from_port = 0
-    # ipv6_cidr_blocks = [ "value" ]
-    # prefix_list_ids = [ "value" ]
+    ipv6_cidr_blocks = [ "::/0" ]
+    # prefix_list_ids = [ "default" ]
     protocol = "-1"
-    # security_groups = [ "value" ]
+    # security_groups = [ default ]
     # self = false
     to_port = 0
   } ]
 }
 
-resource "aws_security_group" "database-Connection" {
+resource "aws_security_group" "data-conn" {
   name = "db-secgrp"
   description = "Point 2, For RDS inbound port set to 5432"
   vpc_id = aws_vpc.main.id
   ingress = [ {
-    # cidr_blocks = [ "value" ]
+    cidr_blocks = [aws_vpc.main.cidr_block]
     # description = "value"
     from_port = 5432
-    # ipv6_cidr_blocks = [ "value" ]
+    ipv6_cidr_blocks = [ aws_vpc.main.ipv6_cidr_blocks]
     # prefix_list_ids = [ "value" ]
     protocol = "tcp"
     security_groups = [ aws_security_group.ssh.id ]
@@ -111,10 +111,10 @@ resource "aws_security_group" "database-Connection" {
     to_port = 5432
   } ]
   egress = [ {
-    # cidr_blocks = [ "value" ]
+    cidr_blocks = [ "0.0.0.0/0" ]
     # description = "value"
     from_port = 0
-    # ipv6_cidr_blocks = [ "value" ]
+    ipv6_cidr_blocks = [ "::/0" ]
     # prefix_list_ids = [ "value" ]
     protocol = "-1"
     # security_groups = [ "value" ]

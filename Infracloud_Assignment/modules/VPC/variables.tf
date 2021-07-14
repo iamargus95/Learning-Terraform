@@ -19,11 +19,11 @@ variable "vpc_name" {
 variable "private_cidr_block" {
     type = list(string)
     description = "IP of the 3 private subnets."
-    default = [ "10.0.1.0/32", "10.0.2.0/32", "10.0.3.0/32" ]
+    default = [ "10.0.1.0/24", "10.0.2.0/24", "10.0.3.0/24" ]
 }
 
 variable "public_cidr_block" {
     type = list(string)
     description = "IP of the 3 Public Subnets."
-    default = [ "10.0.4.0/32", "10.0.5.0/32", "10.0.6.0/32" ]
+    default = [ "10.0.4.0/24", "10.0.5.0/24", "10.0.6.0/24" ]
 }
