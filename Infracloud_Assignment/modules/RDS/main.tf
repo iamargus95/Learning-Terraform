@@ -17,5 +17,5 @@ resource "aws_db_instance" "mydata" {
     db_subnet_group_name = "${aws_db_subnet_group.data-subnet.name}"
     vpc_security_group_ids = ["${var.db_grp_id}"]
     skip_final_snapshot = true
-    depends_on = [aws_db_group.data-subnet,]
+    depends_on = [aws_db_subnet_group.data-subnet]
 }

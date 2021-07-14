@@ -1,10 +1,10 @@
 resource "aws_instance" "webserver" {
     ami = var.ami  //ami value taken for AWS Website EC2 -> Launch Instance -> Choose Location -> Copy required ami
     instance_type = var.instance_type  //Free tier compatible
-    count = "${length(output.m_public_id)}"
+    count = "${length(var.m_public_id)}"
     subnet_id = "${element(var.m_public_id, count.index)}"
     associate_public_ip_address = true
-    vpc_security_group_id = "${[var.ssh_secgrp_id]}"
+    vpc_security_group_ids = "${[var.ssh_secgrp_id]}"
 }
 
 resource "aws_key_pair" "deploy" {
