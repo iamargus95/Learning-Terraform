@@ -42,20 +42,20 @@ Create VPC with 3 private and 3 public subnets. Create NAT gateway, internet gat
 
 - [X] Create a VPC with 3 public and 3 Private subnets
 
-- [ ] Create NAT gateway, internet gateway and route tables
+- [X] Create NAT gateway, internet gateway and route tables
 
-- [ ] Instances in the public subnet should be able to access the internet directly through the internet gateway and anyone from outside should be able to access the instance in public subnet if security group allows
+- [X] Instances in the public subnet should be able to access the internet directly through the internet gateway and anyone from outside should be able to access the instance in public subnet if security group allows
 
-- [ ] Inbound connections from outside of VPC should not be allowed, but outbound connections from within the subnet should be allowed as we route them via NAT instance
+- [X] Inbound connections from outside of VPC should not be allowed, but outbound connections from within the subnet should be allowed as we route them via NAT instance
 
-- [ ] For EC2
+- [X] For EC2
 
 	* Inbound - allow port 22 access from specific IPs which are whitelisted.
 
 	* Outbound - rules - All allowed.
 
-- [ ] For RDS
+- [X] For RDS
 	* Inbound* - port 5432 (PostgreSQL) for SG that was created for EC2.
 	* Outbound rules - All allowed.
 
-- [ ] Create RDS, EC2 instances and VPC Components
+- [X] Create RDS, EC2 instances and VPC Components
