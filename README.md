@@ -23,5 +23,5 @@ Using modules to declare various resources for code reusability. this time on GC
 
 ## Assignments
 
-### 1. [Network_Fundamentals](https://github.com/iamargus95/Learning-Terraform/tree/master/Assignments/Infracloud_Assignment)
+### 1. [Network_Fundamentals](https://github.com/iamargus95/Learning-Terraform/tree/master/Assignments/Network_Fundamentals)
 Create VPC, Subnets and Scurity Groups without using pre-built modules.
