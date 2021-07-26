@@ -7,6 +7,7 @@ __Short projects and notes to document my Terraform journey. All the exercises a
 A free tier AWS and GCP accounts have been used throughout this project.__
 
 > Exercise specific instructions are available in a dedicated markdown file.
+## Excercises
 
 ### 1. [01_Ubuntu_LTS_AWS](https://github.com/iamargus95/Learning-Terraform/tree/master/Exercises/01_Ubuntu_LTS_AWS)
 Creating an Ubuntu LTS instance on Amazon Web Services (AWS).
@@ -19,3 +20,8 @@ Using modules to declare various resources for code reusability. Again on AWS.
 
 ### 4. [02_Modules_GCP](https://github.com/iamargus95/Learning-Terraform/tree/master/Exercises/02_Modules_GCP)
 Using modules to declare various resources for code reusability. this time on GCP
+
+## Assignments
+
+### 1. [Network_Fundamentals](https://github.com/iamargus95/Learning-Terraform/tree/master/Assignments/Infracloud_Assignment)
+Create VPC, Subnets and Scurity Groups without using pre-built modules.
