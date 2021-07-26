@@ -1,7 +1,6 @@
 module "VPC" {
     source = "./modules/VPC"
     # vpc_id = module.VPC.vpc_id
-
 }
 
 module "EC2" {
